@@ -6,6 +6,6 @@ WARNING: here there be CommonJS-style imports!
 to serve this API, run:
 
     
-    yarn serve
+    npm start
     
 
