@@ -4,9 +4,9 @@
   "description": "WARNING: here there be CommonJS-style imports!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon",
-    "serve": "node index.js"
+    "start": "node index.js",
+    "serve": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
