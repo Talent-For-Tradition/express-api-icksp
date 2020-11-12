@@ -15,6 +15,7 @@ exports.up = function(knex) {
       .notNullable();
     tbl.string("firstdonation", 255);
     tbl.string("lastdonation", 255);
+    tbl.string("last_updated");
   })
 };
 

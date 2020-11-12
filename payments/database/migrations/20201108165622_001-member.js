@@ -9,6 +9,7 @@ exports.up = function (knex) {
     tbl.string("zip", 255).notNullable();
     tbl.string("state", 255).notNullable();
     tbl.string("email", 255).unique();
+    tbl.string("last_updated");
     tbl.timestamp("created_at").defaultTo(knex.fn.now());
   });
 };

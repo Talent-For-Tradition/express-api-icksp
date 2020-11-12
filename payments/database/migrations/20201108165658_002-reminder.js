@@ -9,6 +9,9 @@ exports.up = function (knex) {
     tbl.string("hour", 255).notNullable();
 
     tbl.string("timezone", 255).notNullable();
+    tbl.string("last_updated");
+    tbl.timestamp('created_at').defaultTo(knex.fn.now())
+
   });
 };
 
