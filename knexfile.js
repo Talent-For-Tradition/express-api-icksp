@@ -1,0 +1,17 @@
+// Update with your config settings.
+// require("dotenv").config(".env");
+
+module.exports = {
+  production: {
+    client: "pg",
+    connection: process.env.DATABASE,
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: {
+      directory: "./payments/database/migrations",
+      tableName: "knex_migrations"
+    }
+  }
+};
